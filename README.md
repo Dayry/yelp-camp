@@ -4,7 +4,7 @@ Yelp-like website for adding, reviewing, and commenting on campsites.
 
 ## Description
 
-Allows users to sign up, and add/edit/remove their own campgrounds and comments. Application uses Node, Express,and MongoDB.
+Allows users to sign up, and add/edit/remove their own campgrounds and comments. Application uses Node, Express, and MongoDB.
 
 ## Getting Started (Place holder below this line)
 
