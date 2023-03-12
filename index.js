@@ -3,7 +3,7 @@ const path = require("path")
 const mongoose = require("mongoose")
 const Campground = require("./models/campground")
 const methodOverride = require("method-override")
-const campground = require("./models/campground")
+const ejsMate = require("ejs-mate") // usually called engine, not ejsMate
 
 mongoose.connect('mongodb://192.168.1.75:27017/yelp-camp')
 
@@ -21,6 +21,7 @@ app.set("views", path.join(__dirname, "views"))
 
 app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride("_method"))
+app.engine("ejs", ejsMate) // Use ejsMate as the engine
 
 app.get("/", (req, res) => {
     res.render("home")
